@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="proto-element.html">
+    <link rel="import" href="element-name.html">
+    <link rel="import" href="element-listner.html">
+    <link rel="import" href="element-drag.html">
+    <!--<script src="build/myelement.min.js"></script>-->
+    <script src="myelement.js"></script>
+  </head>
+  <body>
+    <proto-element></proto-element>
+    <element-name></element-name>
+    <input is="my-input" required/>
+    <dom-module id="main-document-element">
+      <template>
+        <p>
+          Hi! I'm a Polymer element that was defined in the
+          main document!
+        </p>
+      </template>
+      <script>
+        HTMLImports.whenReady(function () {
+          Polymer({
+            is: 'main-document-element'
+          });
+        });
+      </script>
+    </dom-module>
+    <main-document-element></main-document-element>
+    <my-custom-element></my-custom-element>
+    <callback-element>sdafsd</callback-element>
+    <element-listner></element-listner>
+    <element-drag></element-drag>
+  </body>
+  
+
+</html>

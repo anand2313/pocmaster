@@ -1,0 +1,14 @@
+default methods of Polymer 1 Thumb Rules:
+->"ready" function will call after dom is ready
+->"created" function will call before the ready method gets called
+->To accces the siblings the "attached" call back should be added and inside add "this.async" method
+-> To access the id from an element "this.$.IdName.textContext/innerHTML"
+->Element name must contain "-"
+->"factoryImpl" method will be invoked when you create an element using constructor
+->We can define the element in the main document using "HTMLImports.whenReady"
+->"observers" To monitor the property value changes
+->"indexSplices" to find the changes in an array
+->"Polymer.dom" For dom traversal
+->"listner" to add the default events
+->"on-track" event for drag and drop the element/div
+->"on-tap" event works generally works like click event

@@ -1,0 +1,38 @@
+<dom-module id="element-listner">
+
+  <template>
+    <div>I will respond</div>
+    <div>to a tap on</div>
+    <div on-click="handleClick">any of my children!</div>
+    
+    <div id="special">I am special!</div>
+  </template>
+
+  <script>
+
+    Polymer({
+
+      is: 'element-listner',
+
+      listeners: {
+        'tap': 'regularTap',
+        'special.tap': 'specialTap'
+      },
+
+      regularTap: function(e) {
+        alert("Thank you for tapping" + e.type);
+      },
+      handleClick: function(e){
+        alert(e.type);
+
+      },
+      
+      specialTap: function(e) {
+        alert("It was special tapping");
+      }
+
+    });
+
+  </script>
+
+</dom-module>

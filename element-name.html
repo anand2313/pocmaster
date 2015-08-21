@@ -1,0 +1,36 @@
+<link rel="import"
+      href="bower_components/polymer/polymer.html">
+
+<dom-module id="element-name">
+
+  <style>
+    /* CSS rules for your element */
+  </style>
+  
+  <template>
+    <!-- local DOM for your element -->
+
+    <div>{{greeting}}<span id="header"></span></div> <!-- data bindings in local DOM -->
+  </template>
+
+ <script>
+    // element registration
+    Polymer({
+     is:"element-name",
+     ready:function(){
+      this.$.header.innerHTML = '<b>Anand</b>';
+     },
+      // add properties and methods on the element's prototype
+      
+      properties: {
+        // declare properties for the element's public API
+        greeting: {
+          type: String,
+          value: "Hello!"
+        }
+      }
+    });
+  </script>
+
+</dom-module>
+ 
