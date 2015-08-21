@@ -1,0 +1,19 @@
+{
+  "name": "poc",
+  "version": "0.0.0",
+  "description": "poc project",
+  "authors": [
+    "anand"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0"
+  }
+}
